@@ -6,17 +6,15 @@ const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h3 className={style.title}>Кирилл Правдин</h3>
+                <h2 className={style.title}>Кирилл Правдин</h2>
                 <div className={style.socialContainer}>
-                    <div className={style.footer}></div>
-                    <div className={style.footer}></div>
-                    <div className={style.footer}></div>
-                    <div className={style.footer}></div>
+                    <div className={style.iconFooter}></div>
+                    <div className={style.iconFooter}></div>
+                    <div className={style.iconFooter}></div>
+                    <div className={style.iconFooter}></div>
                 </div>
-                <h4>&#xA9;2023 Все права защищены</h4>
+                <span>&#xA9;2023 Все права защищены</span>
             </div>
-
-
         </div>
     );
 };

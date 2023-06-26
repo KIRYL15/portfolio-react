@@ -1,0 +1,39 @@
+.project {
+    width: 500px;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgContainer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-color: #f5d86a;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.button{
+    background-color: rgba(52, 58, 64, 0.65);
+    color: #20c997;
+    padding: 10px 15px;
+
+}
+.projectInfo{
+    padding: 20px 25px;
+}
+.projectTitle{
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    margin: 0 0 5px;
+    color: #dee3e4;
+    line-height: 1.2;
+}
+.description {
+    font-family: Poppins,sans-serif;
+    color: #dee3e4;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
