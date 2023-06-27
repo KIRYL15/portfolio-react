@@ -1,39 +1,52 @@
 .project {
-    width: 500px;
-    background-color: #343a40;
-    display: flex;
-    flex-direction: column;
+  width: 500px;
+  background-color: #343a40;
+  display: flex;
+  flex-direction: column;
+}
+.project .imgContainer {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.project .imgContainer::before {
+  position: absolute;
+  content: "";
+  background-color: #212529;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+}
+.project .imgContainer .button {
+  background-color: rgba(248, 248, 255, 0.91);
+  color: #20c997;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+}
+.project .projectInfo {
+  padding: 20px 25px;
+}
+.project .projectInfo .projectTitle {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  margin: 0 0 5px;
+  color: #dee3e4;
+  line-height: 1.2;
+}
+.project .projectInfo .description {
+  font-family: Poppins, sans-serif;
+  color: #dee3e4;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
-.imgContainer {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    background-color: #f5d86a;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-}
-.button{
-    background-color: rgba(52, 58, 64, 0.65);
-    color: #20c997;
-    padding: 10px 15px;
-
-}
-.projectInfo{
-    padding: 20px 25px;
-}
-.projectTitle{
-    font-family: Poppins,sans-serif;
-    font-size: 1rem;
-    margin: 0 0 5px;
-    color: #dee3e4;
-    line-height: 1.2;
-}
-.description {
-    font-family: Poppins,sans-serif;
-    color: #dee3e4;
-    font-size: 0.85rem;
-    line-height: 1.8;
-    font-weight: 400;
-}
+/*# sourceMappingURL=Project.module.css.map */
