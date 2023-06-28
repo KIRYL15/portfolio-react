@@ -1,0 +1,22 @@
+@import ".././common/styles/sass/variables.scss";
+
+.mainBlock {
+    height: 100vh;
+    background-color:$bgColor;
+    .text{
+        width: 600px;
+        font-family: $fontFamily;
+        color: $textColor;
+    }
+    .photo{
+        width: 300px;
+        height: 400px;
+        background-color: $primaryColor;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+}
+
+

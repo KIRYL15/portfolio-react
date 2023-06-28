@@ -1,52 +1,48 @@
+@import "../../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/mixins.scss";
 .project {
-    width: 500px;
-    background-color: #343a40;
+  width: 500px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  .imgContainer {
+    height: 300px;
     display: flex;
-    flex-direction: column;
-    .imgContainer {
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        &::before {
-            position: absolute;
-            content: '';
-            background-color: #212529;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0.4;
-        }
-        .button{
-            background-color: rgba(248, 248, 255, 0.91);
-            color: #20c997;
-            padding: 10px 15px;
-            position: relative;
-            z-index: 1;
-        }
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
     }
-    .projectInfo{
-        padding: 20px 25px;
-        .projectTitle{
-            font-family: Poppins,sans-serif;
-            font-size: 1rem;
-            margin: 0 0 5px;
-            color: #dee3e4;
-            line-height: 1.2;
-        }
-        .description {
-            font-family: Poppins,sans-serif;
-            color: #dee3e4;
-            font-size: 0.85rem;
-            line-height: 1.8;
-            font-weight: 400;
-        }
+    .button {
+      background-color: $primaryColor;
+      color: $textColor;
+      padding: 10px 15px;
+      position: relative;
+      z-index: 1;
     }
+  }
+  .projectInfo {
+    padding: 20px 25px;
+    .projectTitle {
+      @include text($fontFamily, 1rem, 1.2);
+      margin: 0 0 5px;
+    }
+    .description {
+      @include text($fontFamily, 0.85rem, 1.8);
+      font-weight: 400;
+    }
+  }
 }
 
 

@@ -1,0 +1,36 @@
+.footersBlock {
+  background-color: #212529;
+}
+.footersBlock .footerContainer {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footersBlock .footerContainer .nameTitle {
+  color: #dee3e4;
+}
+.footersBlock .footerContainer .socialContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 633px) {
+  .footersBlock .footerContainer .socialContainer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.footersBlock .footerContainer .socialContainer .iconFooter {
+  height: 50px;
+  width: 50px;
+}
+.footersBlock .footerContainer .bottom {
+  color: #dee3e4;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=Footers.module.css.map */

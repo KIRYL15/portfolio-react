@@ -1,14 +1,17 @@
+@import "../common/styles/sass/variables";
+
 .contactsBlock {
-  background-color: #343a40;
+  background-color: $bgSecondColor;
 }
 
 .contactsContainer {
+
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .title {
-  color: #dee3e4;
+  color: $textColor;
 }
 
 .contacts {
@@ -26,6 +29,5 @@
 
 .button {
   background-color: #7df1f1;
-}
 
-/*# sourceMappingURL=Contacts.module.css.map */
+}

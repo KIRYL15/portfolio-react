@@ -1,10 +1,10 @@
 import React from 'react';
-import style from './Projects.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
 import Project from './project/Project';
-import {Title} from '../common/components/title/Title';
+import style from './Projects.module.scss'
 import todoImage from '../assets/image/todoImage.jpg'
+import {Title} from '../common/components/title/Title';
 import socialImage from '../assets/image/socialImage.png'
+import styleContainer from '../common/styles/Container.module.css'
 
 const Projects = () => {
     const social = {backgroundImage: 'url(' + socialImage + ')'}

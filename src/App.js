@@ -3,7 +3,7 @@ import React from 'react';
 import Header from "./header/Header";
 import Main from "./main/Main";
 import Skills from "./skills/Skills";
-import Footer from "./footer/Footer";
+import Footers from "./footers/Footers";
 import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 
@@ -15,7 +15,7 @@ function App() {
             <Skills/>
             <Projects/>
             <Contacts/>
-            <Footer/>
+            <Footers/>
         </div>
     );
 }

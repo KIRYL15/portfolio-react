@@ -1,0 +1,22 @@
+@import "../common/styles/sass/variables";
+
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Poppins,sans-serif;
+    color: #dee3e4;
+    padding: 20px;
+}
+.textHome{
+
+}
+.btNav{
+    color: $textColor;
+    text-decoration: none
+
+}
+.btNav:hover{
+    color: $primaryColor;
+
+}

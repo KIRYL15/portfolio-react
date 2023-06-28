@@ -1,6 +1,19 @@
 .nav {
-    border:1px solid red;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins, sans-serif;
+  color: #dee3e4;
+  padding: 20px;
 }
+
+.btNav {
+  color: #dee3e4;
+  text-decoration: none;
+}
+
+.btNav:hover {
+  color: #20c997;
+}
+
+/*# sourceMappingURL=Nav.module.css.map */
