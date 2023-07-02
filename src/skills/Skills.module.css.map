@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Skills.module.scss","../common/styles/sass/variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA,kBCDY;EDEZ;EACA;;AACA;EACI;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;;AACA;EANJ;IAOQ","file":"Skills.module.css"}
+{"version":3,"sourceRoot":"","sources":["Skills.module.scss","../common/styles/sass/variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA,kBCDY;EDEZ;EACA;;AACA;EACI;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;;AAEA;EAPJ;IAQQ","file":"Skills.module.css"}

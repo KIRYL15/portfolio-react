@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Skill.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EARF;IASI;IACA;;;AAEF;EACE;EACA;EACA","file":"Skill.module.css"}
+{"version":3,"sourceRoot":"","sources":["Skill.module.scss","../../common/styles/sass/variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA,kBCFQ;EDGR;EACA;EACA;EACA;EACA,OCTU;EDUV;EACA;EACA;;AAEA;EAZF;IAaI;IACA;;;AAEF;EACE;EACA;EACA;EACA","file":"Skill.module.css"}

@@ -5,16 +5,26 @@ import telIcon from '../assets/image/telegramIcon.svg'
 import linkIcon from '../assets/image/linkedinIcon.svg'
 import gitIcon from '../assets/image/githubIcon.svg'
 
+const icons = [
+    {img: linkIcon, alt: 'LinkedIn', title: 'link', ref:'https://www.linkedin.com/in/kiryl-praudzin/'},
+    {img: gitIcon, alt: 'GitHub', title: 'git', ref: "https://github.com/KIRYL15"},
+    {img: telIcon, alt: 'Telegram', title: 'tlg', ref: "https://t.me/Kiryl15"},
+];
 
 const Footers = () => {
-        return (
+
+    return (
         <div className={style.footersBlock}>
+
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.nameTitle}>Kirill</h2>
                 <div className={style.socialContainer}>
-                    <img src={linkIcon} className={style.iconFooter}/>
-                    <img src={gitIcon}  className={style.iconFooter}/>
-                    <img src={telIcon} className={style.iconFooter}/>
+                    {icons.map(icon => (
+                        <a href={icon.ref}>
+                            <img title={icon.title} src={icon.img} alt={icon.alt} className={style.iconFooter}
+                                 key={icon.alt}/>
+                        </a>
+                    ))}
                 </div>
                 <span className={style.bottom}>Copyright &#xA9;2023 All rights reserved</span>
             </div>
