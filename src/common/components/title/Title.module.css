@@ -1,12 +1,18 @@
 .title {
-  font-size: 1.75rem;
-  font-family: Poppins, sans-serif;
-  color: #dee3e4;
-  font-weight: 300;
   margin: 0 0 30px;
+  font-family: Poppins, sans-serif;
+  font-size: 36px;
   line-height: 1.2;
+  font-weight: 600;
   text-transform: capitalize;
   position: relative;
+  text-align: center;
+  font-size: 1.75rem;
+  color: #dee3e4;
+  font-weight: 300;
+}
+.title h2 {
+  margin: 0;
 }
 .title ::before {
   content: "";
@@ -18,9 +24,6 @@
   margin-top: 30px;
   transform: translate(-50%, 50%);
   left: 50%;
-}
-.title h2 {
-  margin: 0;
 }
 
 /*# sourceMappingURL=Title.module.css.map */

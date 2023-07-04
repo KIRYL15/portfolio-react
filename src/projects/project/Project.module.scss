@@ -1,5 +1,7 @@
 @import "../../common/styles/sass/variables.scss";
 @import "../../common/styles/sass/mixins.scss";
+@import "../../common/components/button/Button.module";
+
 .project {
   width: 500px;
   background-color: $bgSecondColor;
@@ -24,22 +26,30 @@
       right: 0;
       opacity: 0.5;
     }
-    .button {
+    a[type="submit"] {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+      text-decoration: none
+
+    }
+ /*   .button {
       background-color: $primaryColor;
       color: $textColor;
       padding: 10px 15px;
       position: relative;
       z-index: 1;
-    }
+    }*/
   }
   .projectInfo {
     padding: 20px 25px;
     .projectTitle {
-      @include text($fontFamily, 1rem, 1.2);
+      @include text($fontFamily, 1rem, 1.2, 400);
       margin: 0 0 5px;
     }
     .description {
-      @include text($fontFamily, 0.85rem, 1.8);
+      @include text($fontFamily, 0.85rem, 1.8, 400);
       font-weight: 400;
     }
   }

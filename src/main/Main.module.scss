@@ -1,7 +1,10 @@
 @import ".././common/styles/sass/variables.scss";
+@import ".././common/styles/sass/mixins";
 
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
+    @include flex(row, center, center, nowrap);
+    padding: 100px 0;
     background-color:$bgColor;
     .text{
         width: 600px;

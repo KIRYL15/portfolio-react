@@ -1,32 +1,87 @@
-.footersBlock {
-  background-color: #212529;
+.btn {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  max-width: 80%;
+  width: 30%;
+  color: #dee3e4;
+  outline: none;
+  position: relative;
+  z-index: 0;
 }
-.footersBlock .footerContainer {
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 8px;
+  background: #20c997;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
 }
-.footersBlock .footerContainer .nameTitle {
+.btn:hover {
+  text-decoration: none;
   color: #dee3e4;
 }
+.btn:hover::after {
+  width: 80%;
+  height: 100%;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footersBlock {
+  min-height: 300px;
+  background-color: #212529;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: nowrap;
+}
+.footersBlock .footerContainer {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  padding: 100px 0 20px;
+}
 .footersBlock .footerContainer .socialContainer {
-  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 300px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 633px) {
   .footersBlock .footerContainer .socialContainer {
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+    width: 100%;
   }
 }
 .footersBlock .footerContainer .socialContainer .iconFooter {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
 }
 .footersBlock .footerContainer .bottom {
   color: #dee3e4;

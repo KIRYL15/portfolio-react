@@ -1,13 +1,22 @@
 @import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
 .title {
-  font-size: 1.75rem;
-  font-family: Poppins, sans-serif;
-  color: $textColor;
-  font-weight: 300;
   margin: 0 0 30px;
-  line-height: 1.2;
+  @include text($fontFamily, 36px, 1.2, 600);
   text-transform: capitalize;
   position: relative;
+  text-align: center;
+  font-size: 1.75rem;
+  //font-family: Poppins, sans-serif;
+  color: $textColor;
+  font-weight: 300;
+  //line-height: 1.2;
+
+  & h2 {
+    margin: 0;
+  }
+
   & ::before {
     content: '';
     position: absolute;
@@ -19,9 +28,7 @@
     transform: translate(-50%, 50%);
     left: 50%;
   }
-  & h2 {
-    margin: 0;
-  }
+
 }
 
 

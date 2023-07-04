@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Footers.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
 import telIcon from '../assets/image/telegramIcon.svg'
 import linkIcon from '../assets/image/linkedinIcon.svg'
 import gitIcon from '../assets/image/githubIcon.svg'
+import {Title} from "../common/components/title/Title";
 
 const icons = [
     {img: linkIcon, alt: 'LinkedIn', title: 'link', ref:'https://www.linkedin.com/in/kiryl-praudzin/'},
@@ -15,9 +15,8 @@ const Footers = () => {
 
     return (
         <div className={style.footersBlock}>
-
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.nameTitle}>Kirill</h2>
+            <div className={style.footerContainer}>
+                <Title title={"Kirill"}/>
                 <div className={style.socialContainer}>
                     {icons.map(icon => (
                         <a href={icon.ref}>

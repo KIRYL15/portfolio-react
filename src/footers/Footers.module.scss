@@ -1,34 +1,30 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+@import "../common/components/button/Button.module";
+
 
 .footersBlock {
+  min-height: 300px;
   background-color: #212529;
+  @include flex(row, center, stretch, nowrap);
 
   .footerContainer {
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-
-    .nameTitle {
-      color: $textColor;
-    }
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+    padding: 100px 0 20px;
 
     .socialContainer {
-      width: 30%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      box-sizing: border-box;
-      flex-wrap: wrap;
-      @media screen and (max-width: 633px) {
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
+      @include flex(row, space-between, center, nowrap);
+      width: 300px;
+      margin-top: 20px;
 
+      @media screen and (max-width: 633px) {
+        width: 100%;
       }
 
       .iconFooter {
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
       }
     }
 

@@ -1,37 +1,73 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+@import "../common/components/button/Button.module";
+
 
 .contactsBlock {
+  padding: 70px 0;
   background-color: $bgSecondColor;
+
+  .contactsContainer {
+    @include flex(column, flex-start, center, nowrap);
+    @include container();
+
+    .form {
+      @include flex(column, flex-start, stretch, nowrap);
+      width: 500px;
+      margin-top: 30px;
+
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      font-family: $fontFamily;
+      @media screen and (max-width: 680px) {
+        width: 100%;
+
+      }
+
+      .formArea {
+        height: calc(1.5em + .75rem + 2px);
+        padding: .4rem 15px;
+        background-color: $bgColor;
+        color: $textColor;
+        &:focus{
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+          background-color: #ffffff;
+
+        }
+      }
+
+      .textarea {
+        min-height: 80px;
+        padding: 15px;
+        resize: none;
+        background-color: $bgColor;
+
+        &:focus{
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+          background-color: #ffffff;
+
+        }
+        font-family: $fontFamily;
+
+      }
+      button[type="submit"] {
+        @extend .btn;
+        align-self: center;
+        background-color: transparent;
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
-.contactsContainer {
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.title {
-  color: $textColor;
-}
-
-.contacts {
-  width: 50%;
-  border: 1px solid;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  font-family:$fontFamily;
-}
-
-.contacts input, .contacts textarea {
+.form input, .form textarea {
   width: 100%;
 }
 
-.button {
-  background-color: #7df1f1;
 
-}
-.textarea{
-  font-family:$fontFamily;
 
-}
+
+

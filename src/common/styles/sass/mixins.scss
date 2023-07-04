@@ -1,13 +1,36 @@
 @import "./variables.scss";
-@mixin text($fontFamily, $fontSize, $lineHeight ) {
+
+@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
   font-family: $fontFamily;
   font-size: $fontSize;
   line-height: $lineHeight;
-  color: $textColor;
+  font-weight: $fontWeight;
 }
 
-@mixin container(){
+@mixin container() {
   width: 80%;
   margin: 0 auto;
+
+
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-content: $alignItems;
+  flex-wrap: $wrap;
+}
+
+@mixin bgSettings() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
