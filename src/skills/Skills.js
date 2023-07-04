@@ -17,6 +17,8 @@ import storybookIcon from '../assets/image/skillsIcon/storybookIcon.svg';
 import htmlIcon from '../assets/image/skillsIcon/htmlIcon.svg';
 
 const iconsForSkill = [
+    {img: reactjsIcon, alt: 'ReactJS'},
+    {img: reduxIcon, alt: 'Redux'},
     {img: tsIcon, alt: 'TypeScript'},
     {img: jsIcon, alt: 'JavaScript'},
     {img: cssIcon, alt: 'CSS'},
@@ -25,8 +27,6 @@ const iconsForSkill = [
     {img: gitIcon, alt: 'Git'},
     {img: materialIcon, alt: 'Material UI'},
     {img: postmanIcon, alt: 'Postman'},
-    {img: reactjsIcon, alt: 'ReactJS'},
-    {img: reduxIcon, alt: 'Redux'},
     {img: sassIcon, alt: 'SASS'},
     {img: storybookIcon, alt: 'Storybook'},
 ];

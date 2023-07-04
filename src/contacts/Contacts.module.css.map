@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Contacts.module.scss","../common/styles/sass/variables.scss"],"names":[],"mappings":"AAEA;EACE;;;AAGF;EAEE;EACA;;;AAGF;EACE,OCbU;;;ADgBZ;EACE;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE","file":"Contacts.module.css"}
+{"version":3,"sourceRoot":"","sources":["Contacts.module.scss","../common/styles/sass/variables.scss"],"names":[],"mappings":"AAEA;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE,OCZU;;;ADeZ;EACE;EACA;EACA;EACA;EACA;EACA;EACA,aClBU;;;ADqBZ;EACE;;;AAGF;EACE;;;AAGF;EACE,aC9BU","file":"Contacts.module.css"}
