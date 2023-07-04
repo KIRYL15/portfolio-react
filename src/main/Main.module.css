@@ -8,12 +8,69 @@
   padding: 100px 0;
   background-color: #212529;
 }
-.mainBlock .text {
+.mainBlock .container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.mainBlock .container .greeting {
   width: 600px;
-  font-family: Poppins, sans-serif;
   color: #dee3e4;
 }
-.mainBlock .photo {
+.mainBlock .container span {
+  font-size: 20px;
+}
+.mainBlock .container span:nth-child(2) {
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+.mainBlock .container span:nth-child(2) span {
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 5px;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+}
+.mainBlock .container span:nth-child(2) span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: #20c997;
+  bottom: 0;
+  z-index: -1;
+}
+.mainBlock .container h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 28px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 1143px) {
+  .mainBlock .container {
+    align-items: center;
+  }
+}
+.mainBlock .container .photo {
   width: 300px;
   height: 400px;
   background-color: #20c997;
@@ -21,6 +78,13 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+}
+@media screen and (max-width: 600px) {
+  .mainBlock .container .photo {
+    height: 360px;
+    width: 260px;
+    transition: 0.5s;
+  }
 }
 
 /*# sourceMappingURL=Main.module.css.map */

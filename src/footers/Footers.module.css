@@ -71,11 +71,14 @@
   justify-content: space-between;
   align-content: center;
   flex-wrap: nowrap;
-  width: 300px;
-  margin-top: 20px;
+  width: 400px;
+  margin-top: 30px;
 }
-@media screen and (max-width: 633px) {
+@media screen and (max-width: 424px) {
   .footersBlock .footerContainer .socialContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
   }
 }
@@ -84,8 +87,14 @@
   width: 70px;
 }
 .footersBlock .footerContainer .bottom {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 30px;
   color: #dee3e4;
   padding: 20px;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=Footers.module.css.map */

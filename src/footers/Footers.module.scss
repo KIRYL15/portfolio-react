@@ -15,10 +15,12 @@
 
     .socialContainer {
       @include flex(row, space-between, center, nowrap);
-      width: 300px;
-      margin-top: 20px;
-
-      @media screen and (max-width: 633px) {
+      width: 400px;
+      margin-top: 30px;
+      @media screen and (max-width: 424px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
       }
 
@@ -29,8 +31,11 @@
     }
 
     .bottom {
+      @include text($fontFamily, 15px, 1.2, 400);
+      margin-top: 30px;
       color: $textColor;
       padding: 20px;
+      opacity: 0.6;
     }
   }
 }
