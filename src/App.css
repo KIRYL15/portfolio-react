@@ -1,0 +1,8 @@
+.App > div:nth-child(n) {
+  background-color: #343a40;
+}
+.App > div:nth-child(2n) {
+  background-color: #212529;
+}
+
+/*# sourceMappingURL=App.css.map */

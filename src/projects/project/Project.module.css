@@ -70,9 +70,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .project .imgContainer a[type=submit] {
+  font-size: 20px;
   align-self: center;
   background-color: transparent;
   margin-top: 30px;
@@ -86,6 +87,7 @@
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 400;
+  color: #dee3e4;
   margin: 0 0 5px;
 }
 .project .projectInfo .description {
@@ -93,6 +95,7 @@
   font-size: 0.85rem;
   line-height: 1.8;
   font-weight: 400;
+  color: #dee3e4;
   font-weight: 400;
 }
 

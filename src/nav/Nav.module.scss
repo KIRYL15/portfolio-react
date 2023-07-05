@@ -1,23 +1,25 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    font-family: Poppins,sans-serif;
-    color: #dee3e4;
-    padding: 20px;
-
-}
-.textHome{
-
-}
-.btNav{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins, sans-serif;
+  color: #dee3e4;
+  padding: 30px;
+  a {
+    @include text($fontFamily, 16px, 1.2, 400);
     color: $textColor;
-    text-decoration: none
-
-}
-.btNav:hover{
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  .active {
     color: $primaryColor;
+  };
+
 
 }

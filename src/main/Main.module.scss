@@ -5,7 +5,17 @@
   min-height: 100vh;
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
-  background-color: $bgColor;
+  .particles {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
 
   .container {
     @include container();
@@ -15,17 +25,15 @@
       width: 600px;
       color: $textColor;
     }
-
     span {
-      font-size: 20px;
-
+      font-size: 30px;
       &:nth-child(2) {
-        @include text($fontFamily, 40px, 1.2, 600);
+        @include text($fontFamily, 50px, 1.2, 600);
         letter-spacing: 5px;
         margin: 10px 0;
 
         span {
-          @include text($fontFamily, 40px, 1.2, 600);
+          @include text($fontFamily, 50px, 1.2, 600);
           letter-spacing: 5px;
           position: relative;
           z-index: 0;
@@ -42,6 +50,13 @@
           }
         }
       }
+      &:nth-child(3){
+        span{
+          @include text($fontFamily, 40px, 1.5, 400);
+          letter-spacing: 2px;
+          margin: 20px 0;
+        }
+      }
     }
 
     h1 {
@@ -56,6 +71,7 @@
 
 
     .photo {
+
       @media screen and (max-width: 600px) {
         height: 360px;
         width: 260px;

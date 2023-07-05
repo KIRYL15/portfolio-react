@@ -15,6 +15,7 @@ import reduxIcon from '../assets/image/skillsIcon/reduxIcon.svg';
 import sassIcon from '../assets/image/skillsIcon/sassIcon.svg';
 import storybookIcon from '../assets/image/skillsIcon/storybookIcon.svg';
 import htmlIcon from '../assets/image/skillsIcon/htmlIcon.svg';
+import Fade from 'react-reveal/Fade';
 
 const iconsForSkill = [
     {img: reactjsIcon, alt: 'ReactJS'},
@@ -30,19 +31,19 @@ const iconsForSkill = [
     {img: sassIcon, alt: 'SASS'},
     {img: storybookIcon, alt: 'Storybook'},
 ];
-const Skills = () => {
+export const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+        <div id={"skills"} className={style.skillsBlock}>
+            <div className={style.skillsContainer}>
                 <Title title={"Skills"}/>
+                <Fade top>
                 <div className={style.skills}>
                     {iconsForSkill.map((icon) => (
                         <Skill title={icon.alt} image={icon.img} key={icon.alt} alt={icon.alt}/>
                     ))}
                 </div>
+                </Fade>
             </div>
         </div>
     );
-};
-
-export default Skills;
+}

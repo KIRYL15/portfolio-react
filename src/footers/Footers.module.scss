@@ -20,13 +20,14 @@
       @media screen and (max-width: 424px) {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         width: 100%;
       }
 
       .iconFooter {
-        height: 70px;
-        width: 70px;
+        height: 60px;
+        width: 60px;
+        margin: 4px;
       }
     }
 

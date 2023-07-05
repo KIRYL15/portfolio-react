@@ -1,11 +1,11 @@
-import './App.css';
+import './App.scss';
 import React from 'react';
 import Header from "./header/Header";
 import Main from "./main/Main";
-import Skills from "./skills/Skills";
+import {Skills} from "./skills/Skills";
 import Footers from "./footers/Footers";
-import Projects from "./projects/Projects";
-import Contacts from "./contacts/Contacts";
+import {Projects} from "./projects/Projects";
+import {Contacts} from "./contacts/Contacts";
 
 function App() {
     return (

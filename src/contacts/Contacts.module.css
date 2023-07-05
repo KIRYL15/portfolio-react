@@ -52,8 +52,6 @@
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,6 +102,8 @@
   align-self: center;
   background-color: transparent;
   margin-top: 30px;
+  font-size: 20px;
+  width: 50%;
 }
 
 .form input, .form textarea {
