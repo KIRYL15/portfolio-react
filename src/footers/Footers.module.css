@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   font-family: Poppins, sans-serif;
   font-size: 14px;
@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: stretch;
+  align-items: stretch;
   flex-wrap: nowrap;
 }
 .footersBlock .footerContainer {
@@ -59,7 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   padding: 100px 0 20px;
 }
@@ -67,7 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   width: 400px;
   margin-top: 30px;

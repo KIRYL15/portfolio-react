@@ -3,12 +3,12 @@
 @import "../../common/components/button/Button.module";
 
 .project {
-  width: 500px;
-  background-color: $bgSecondColor;
+  width: 450px;
   display: flex;
   flex-direction: column;
+  background-color: $bgSecondColor;
   .imgContainer {
-    height: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,28 +33,18 @@
       background-color: transparent;
       margin-top: 30px;
       text-decoration: none
-
     }
- /*   .button {
-      background-color: $primaryColor;
-      color: $textColor;
-      padding: 10px 15px;
-      position: relative;
-      z-index: 1;
-    }*/
   }
   .projectInfo {
     padding: 20px 25px;
     .projectTitle {
-      @include text($fontFamily, 1rem, 1.2, 400);
+      @include text($fontFamily, 1.5rem, 1.5, 400);
       color: $textColor;
-
       margin: 0 0 5px;
     }
     .description {
       @include text($fontFamily, 0.85rem, 1.8, 400);
       color: $textColor;
-      font-weight: 400;
     }
   }
 }

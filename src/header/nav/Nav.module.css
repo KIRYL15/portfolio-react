@@ -1,10 +1,10 @@
 .nav {
-  width: 300px;
+  width: 250px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  font-family: Poppins, sans-serif;
-  color: #dee3e4;
-  padding: 30px;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }
 .nav a {
   font-family: Poppins, sans-serif;
@@ -13,13 +13,17 @@
   font-weight: 400;
   color: #dee3e4;
   cursor: pointer;
-  text-decoration: none;
 }
 .nav a:hover {
   color: #20c997;
 }
 .nav .active {
   color: #20c997;
+}
+@media screen and (max-width: 400px) {
+  .nav {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Nav.module.css.map */

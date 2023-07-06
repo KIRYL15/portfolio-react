@@ -3,8 +3,9 @@
 
 .mainBlock {
   min-height: 100vh;
+  width: 100%;
   @include flex(row, center, center, nowrap);
-  padding: 100px 0;
+  padding: 80px 0;
   .particles {
     width: 10%;
     height: 10%;
@@ -16,11 +17,9 @@
     right: 0;
     opacity: 0.5;
   }
-
   .container {
     @include container();
     @include flex(row, space-around, center, wrap);
-
     .greeting {
       width: 600px;
       color: $textColor;
@@ -31,7 +30,6 @@
         @include text($fontFamily, 50px, 1.2, 600);
         letter-spacing: 5px;
         margin: 10px 0;
-
         span {
           @include text($fontFamily, 50px, 1.2, 600);
           letter-spacing: 5px;
@@ -52,7 +50,7 @@
       }
       &:nth-child(3){
         span{
-          @include text($fontFamily, 40px, 1.5, 400);
+          @include text($fontFamily, 25px, 1.5, 400);
           letter-spacing: 2px;
           margin: 20px 0;
         }

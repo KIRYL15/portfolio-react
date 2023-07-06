@@ -1,9 +1,17 @@
 .header {
-  height: 100px;
-  background-color: #343a40;
+  height: 80px;
+  padding: 0 30px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
+  background-color: #343a40;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 /*# sourceMappingURL=Header.module.css.map */

@@ -6,10 +6,11 @@
     @include container();
     @include flex(column, flex-start, stretch, nowrap);
     .projects {
+      width: 100%;
       @include flex(row, space-between, flex-start, wrap);
       box-sizing: border-box;
       margin-top: 30px;
-      @media screen and (max-width: 1249px) {
+      @media screen and (max-width: 1170px) {
         justify-content: center;
       }
     }
