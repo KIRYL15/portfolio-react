@@ -10,48 +10,38 @@
   .contactsContainer {
     @include flex(column, flex-start, center, nowrap);
     @include container();
-
     .form {
       @include flex(column, flex-start, stretch, nowrap);
       width: 500px;
       margin-top: 30px;
-
       display: flex;
       align-items: center;
       box-sizing: border-box;
       font-family: $fontFamily;
       @media screen and (max-width: 680px) {
         width: 100%;
-
       }
-
       .formArea {
         height: calc(1.5em + .75rem + 2px);
         padding: .4rem 15px;
         background-color: $bgColor;
-        color: $textColor;
         &:focus{
           border: 1px solid transparent;
           transition: all 0.4s ease-in-out 0s;
           background-color: #ffffff;
-
         }
       }
-
       .textarea {
         min-height: 80px;
         padding: 15px;
         resize: none;
         background-color: $bgColor;
-
         &:focus{
           border: 1px solid transparent;
           transition: all 0.4s ease-in-out 0s;
           background-color: #ffffff;
-
         }
         font-family: $fontFamily;
-
       }
       button[type="submit"] {
         @extend .btn;

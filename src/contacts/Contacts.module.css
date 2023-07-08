@@ -79,7 +79,6 @@
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.4rem 15px;
   background-color: #212529;
-  color: #dee3e4;
 }
 .contactsBlock .contactsContainer .form .formArea:focus {
   border: 1px solid transparent;
